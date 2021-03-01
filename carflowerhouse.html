@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car, flower & house</title>
+    <link rel="stylesheet" href="carflowerhouse.css" />
+  </head>
+  <body>
+    <svg width="500" heigh="500">
+      <g>
+        <rect id="house" x="50" y="50" width="80" height="50" />
+        <polygon id="roof" points="50 49 90 5 130 49" />
+
+        <rect id="dor" x="80" y="75" width="20" height="25" />
+
+        <rect id="window" x="60" y="60" width="10" height="10" />
+
+        <rect id="window" x="110" y="60" width="10" height="10" />
+        <line class="grass" x1="0" x2="500" y1="100" y2="100" />
+      </g>
+      <g id="car" class="">
+        <path
+          class="car"
+          d=" M 200 95, 200 85, 210 83, 220 70, 250 70, 255 80, 265 83, 265 95 Z"
+        />
+
+        <circle class="wheal" cx="215" cy="95" r="5" />
+        <circle class="wheal" cx="250" cy="95" r="5" />
+
+        <polygon class="carwindow" points="215 83, 222 74, 232 74, 233 83" />
+        <polygon class="carwindow" points="235 83, 236 74, 248 74, 252 83" />
+      </g>
+
+      <g>
+        <line class="flower" x1="20" x2="20" y1="50" y2="100" />
+
+        <ellipse class="leave1" cx="20" cy="75" rx="8" ry="2" />
+        <ellipse class="leave2" cx="20" cy="75" rx="8" ry="2" />
+
+        <g id="flowerhead" class="rotation">
+          <circle class="flowerleave" cx="24" cy="55" r="4" />
+          <circle class="flowerleave" cx="26" cy="48" r="4" />
+          <circle class="flowerleave" cx="20" cy="43" r="4" />
+          <circle class="flowerleave" cx="14" cy="48" r="4" />
+          <circle class="flowerleave" cx="16" cy="55" r="4" />
+
+          <circle class="flowermiddle" cx="20" cy="50" r="4" />
+        </g>
+      </g>
+    </svg>
+
+    <script src="carflowerhouse.js"></script>
+  </body>
+</html>
