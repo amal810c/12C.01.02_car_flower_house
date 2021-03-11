@@ -7,5 +7,7 @@ function start() {
 }
 
 function drive() {
-  document.querySelector("#car").classList.add("carDrive");
+  gsap.from("#car", { x: "75vw", duration: 3 });
+
+  //document.querySelector("#car").classList.add("carDrive");
 }
